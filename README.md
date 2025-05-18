@@ -1,36 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TimeFolio
 
-## Getting Started
+2025년도 1학기 경북대학교 진로탐색수업 도전 과제 <br><br>
 
-First, run the development server:
+ 도전과제: 개인용 포트폴리오 웹사이트 제작 <br>
+ - 개인의 기술 스택, 프로젝트 경험, 성장 과정을 체계적으로 정리 <br>
+ - 협업자나 채용 담당자에게 자신을 효과적으로 알리는 플랫폼 <br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Team : Vision Makers
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+|<img src="https://avatars.githubusercontent.com/u/139670857?v=4" width="100">|<img src="https://avatars.githubusercontent.com/u/105094462?v=4" width="100">|<img src="https://avatars.githubusercontent.com/u/127305788?v=4" width="100">|<img src="https://avatars.githubusercontent.com/u/198712933?v=4" width="100">|
+|:---:|:---:|:---:|:---:|
+|[김은정(컴학23)](https://github.com/eunjeong821)|[류수빈(컴학23)](https://github.com/naldori)|[박소현(컴학23)](https://github.com/dev-sohyeon)|[백연경(컴학23)](https://github.com/dusrud41)|
+|개발자 및 디자이너|개발자 및 기획자|프로젝트 관리자 및 개발자|개발자 및 테스터|
