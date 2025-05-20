@@ -1,0 +1,38 @@
+.content-title-middle {
+    font-size : 50px;
+    text-align: center;
+    font-family: Cheap-Potatoes-Black-Thin, sans-serif;
+    font-weight : 900;
+    color: var(--olive);
+    margin-bottom : 126px;
+}
+
+.content-box {
+  background-color: rgb(237,237,237);
+  padding: 50px;
+}
+
+
+.vertical-timeline-element-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+}
+
+.vertical-timeline-element-subtitle {
+  font-weight: 400;
+  color: #c9c9c9;
+  font-size: 1rem;
+}
+
+
+.vertical-timeline-element--work {
+  transition: transform 0.2s ease;
+}
+
+.vertical-timeline-element--work:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
