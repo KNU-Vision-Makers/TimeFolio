@@ -1,0 +1,21 @@
+ @font-face {
+    font-family: "Architex";
+    src: url("../../public/fonts/Architex.ttf");
+ }
+  @font-face {
+    font-family: "Cheap-Potatoes-Black";
+    src: url("../../public/fonts/Cheap\ Potatoes\ Black.ttf");
+  }
+   @font-face {
+    font-family: "Cheap-Potatoes-Black-Thin";
+    src: url("../../public/fonts/Cheap\ Potatoes\ Black\ Thin.ttf")
+ }
+
+ /* [Usage] color: var(--olive); */
+ :root {
+  --olive: #4A752C;
+}
+
+body {
+    font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
+}
