@@ -20,7 +20,13 @@ const EditTimeLinePage = () => {
           <VerticalTimelineElement
             key={index}
             className="vertical-timeline-element--work"
-            date={item.date}
+            date={<span style={{
+                fontSize: '0.625rem',
+                fontWeight: 500,
+                color: '#000',
+                display: 'block',
+                paddingBottom: '1rem',
+            }}>{item.date}</span>}
             contentStyle={{ border: `2px solid ${color}`, background: "#fff" }}
             iconStyle={{
                 background: '#fff',
@@ -34,7 +40,7 @@ const EditTimeLinePage = () => {
             contentArrowStyle={{ borderRight: `48px solid ${color}` }}
           >
             <h3 className="vertical-timeline-element-title">{item.title}</h3>
-            <h4 className={styles['vertical-timeline-element-subtitle']}>HANYANG UNIVERSITY</h4>
+            <h4 className={styles['vertical-timeline-element-subtitle']}>{item.subtitle}</h4>
 
           </VerticalTimelineElement>
         );

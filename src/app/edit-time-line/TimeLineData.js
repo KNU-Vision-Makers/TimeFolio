@@ -1,6 +1,6 @@
 export const timelineData = [
   {
-    title: "University Admission",
+    title: "University \nAdmission",
     subtitle: "Hanyang University",
     date: "Mar 2021",
     category: "education",
