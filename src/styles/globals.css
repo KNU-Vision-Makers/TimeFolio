@@ -45,6 +45,11 @@ body {
   font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
 }
 
+.side-bar-button:active{
+  color:#4A752C;
+  font-weight: bolder;
+}
+
 .name-plate {
   color: var(--olive);
   line-height: 70px;
@@ -52,4 +57,3 @@ body {
   margin-top: 40px;
   margin-left: 30px;
 }
-
