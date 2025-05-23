@@ -21,6 +21,7 @@ body {
   font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
 }
 
+/* main page */
 .home-container {
   display: flex;
 }
@@ -29,6 +30,7 @@ body {
   margin-left: 305px; 
 }
 
+/* sidebar */
 .side-bar{
   position: fixed;
   background-color: #DFE5DE;
@@ -56,4 +58,12 @@ body {
   font-size: 40px;
   margin-top: 40px;
   margin-left: 30px;
+}
+
+
+/* login page */
+.logo {
+  color: var(--olive);
+  font-size: 35px;
+  margin-bottom: 10px;
 }
