@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import Logo from '@/components/Logo';
 
 // 로그인 페이지
 const LoginPage = () => {
     return(
         <div className={styles.login}>
-            <div className={styles.logo}>TimeFolio</div>
+            <Logo />
             <div className={styles.inputbox}>
                 <input type='text' placeholder='ID' required />
             </div>
