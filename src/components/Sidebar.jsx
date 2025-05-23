@@ -1,4 +1,4 @@
-import styles from "../styles/globals.css";
+import "../styles/globals.css";
 import NamePlate from "./NamePlate";
 
 export default function Sidebar({ sectionRefs }) {
