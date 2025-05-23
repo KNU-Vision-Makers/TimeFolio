@@ -13,7 +13,7 @@ const LoginPage = () => {
             <div className={styles.inputbox}>
                 <input type='password' placeholder='Password' required />
             </div>
-            <div className={styles.loginbutton}>
+            <div className="big-button">
                 <button>Login</button>
             </div>
             <div className={styles.dividingline}></div>
