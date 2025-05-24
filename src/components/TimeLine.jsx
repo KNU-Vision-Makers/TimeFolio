@@ -27,7 +27,6 @@ const TimeLine = () => {
                             contentStyle={{
                                 border: `2px solid ${color}`,
                                 background: "#fff",
-                                maxWidth: "400px"
                             }}
                             iconStyle={{ // small circle icon
                                 background: '#fff',
