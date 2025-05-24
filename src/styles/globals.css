@@ -17,7 +17,34 @@
 }
 
 body {
-    font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
+  margin: 0;
+  font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
+}
+
+/* main page */
+.home-container {
+  display: flex;
+}
+
+.home-main-container{
+  margin-left: 305px; 
+}
+
+/* sidebar */
+.side-bar{
+  position: fixed;
+  background-color: #DFE5DE;
+  width: 305px;
+  height: 100vh;
+}
+
+.side-bar-button {
+  background: none;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #7E7E7E;
+  font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
 }
 
 .content-title-middle {
