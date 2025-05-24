@@ -27,7 +27,11 @@ const EditTimeLinePage = () => {
                 display: 'block',
                 paddingBottom: '1rem',
             }}>{item.date}</span>}
-            contentStyle={{ border: `2px solid ${color}`, background: "#fff" }}
+              contentStyle={{
+                  border: `2px solid ${color}`,
+                  background: "#fff",
+                  maxWidth: "400px"
+                }}
             iconStyle={{
                 background: '#fff',
                 border: `5px solid ${color}`,
@@ -39,8 +43,11 @@ const EditTimeLinePage = () => {
             }}
             contentArrowStyle={{ borderRight: `48px solid ${color}` }}
           >
-            <h3 className="vertical-timeline-element-title">{item.title}</h3>
-            <h4 className={styles['vertical-timeline-element-subtitle']}>{item.subtitle}</h4>
+            <h3 className="vertical-timeline-element-title" style={{ whiteSpace: 'pre-line' }}>{item.title}</h3>
+            <h4
+                className={styles['vertical-timeline-element-subtitle']}
+                style={{ whiteSpace: 'pre-line' }}
+              >{item.subtitle}</h4>
 
           </VerticalTimelineElement>
         );

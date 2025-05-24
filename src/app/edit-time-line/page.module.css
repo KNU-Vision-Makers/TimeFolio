@@ -20,11 +20,22 @@
   margin-bottom: 0.3rem;
 }
 
+/* .vertical-timeline-element-content {
+  max-width: 400px;
+} */
+
+
+.content-box {
+  padding: 20px; /* 또는 10px으로 조정 */
+}
+
+
 .vertical-timeline-element-subtitle {
   font-weight: 400;
   color: #c9c9c9;
   font-size: 1rem;
 }
+
 
 
 .vertical-timeline-element--work:hover {
