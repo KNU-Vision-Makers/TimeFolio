@@ -21,7 +21,7 @@ const TimeLineEditButton = ({ editMode, setEditMode }) => {
 const EditTimeLinePage = () => {
   const [editMode, setEditMode] = useState(false);
   return (
-    <div className="with-hover">
+    <div className="with-click">
       <TimeLine editMode={editMode} setEditMode={setEditMode} />
       <TimeLineEditButton editMode={editMode} setEditMode={setEditMode} />
     </div>
