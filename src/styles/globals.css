@@ -20,3 +20,57 @@ body {
     font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
 }
 
+.content-title-middle {
+    font-size : 50px;
+    text-align: center;
+    font-family: Cheap-Potatoes-Black-Thin, sans-serif;
+    font-weight : 900;
+    color: var(--olive);
+    margin-bottom : 126px;
+}
+
+.content-box {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, rgba(195,195,195,0.3) 8%, rgba(195,195,195,0.3) 50%, rgba(195,195,195,0.3) 92%, rgba(255,255,255,0.3) 100%);
+  padding: 50px;
+}
+
+
+.vertical-timeline-element-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+}
+
+/* .vertical-timeline-element-content {
+  max-width: 400px;
+} */
+
+
+.content-box {
+  padding: 20px; 
+}
+
+
+.vertical-timeline-element-subtitle {
+  font-weight: 400;
+  color: #c9c9c9;
+  font-size: 1rem;
+}
+
+
+
+.vertical-timeline-element--work:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.with-hover .vertical-timeline-element--work:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-timeline::before {
+  background: #8bc34a;  
+}
+
