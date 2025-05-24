@@ -1,0 +1,118 @@
+ @font-face {
+    font-family: "Architex";
+    src: url("../../public/fonts/Architex.ttf");
+ }
+  @font-face {
+    font-family: "Cheap-Potatoes-Black";
+    src: url("../../public/fonts/Cheap\ Potatoes\ Black.ttf");
+  }
+   @font-face {
+    font-family: "Cheap-Potatoes-Black-Thin";
+    src: url("../../public/fonts/Cheap\ Potatoes\ Black\ Thin.ttf")
+ }
+
+ /* [Usage] color: var(--olive); */
+ :root {
+  --olive: #4A752C;
+}
+
+body {
+  margin: 0;
+  font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
+}
+
+/* main page */
+.home-container {
+  display: flex;
+  width: 100%;
+}
+
+.home-main-container {
+  margin-left: 305px;
+  width: 100%;
+}
+
+/* sidebar */
+.side-bar{
+  position: fixed;
+  background-color: #DFE5DE;
+  width: 305px;
+  height: 100vh;
+}
+
+.side-bar-button {
+  background: none;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #7E7E7E;
+  font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
+}
+
+.side-bar-button:active{
+  color:#4A752C;
+  font-weight: bolder;
+}
+
+.name-plate {
+  color: var(--olive);
+  line-height: 70px;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.content-title-middle {
+    font-size : 50px;
+    text-align: center;
+    font-family: Cheap-Potatoes-Black-Thin, sans-serif;
+    font-weight : 900;
+    color: var(--olive);
+    margin-bottom : 126px;
+}
+
+.content-box {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, rgba(195,195,195,0.3) 8%, rgba(195,195,195,0.3) 50%, rgba(195,195,195,0.3) 92%, rgba(255,255,255,0.3) 100%);
+  padding: 50px;
+}
+
+
+.vertical-timeline-element-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+}
+
+/* .vertical-timeline-element-content {
+  max-width: 400px;
+} */
+
+
+.content-box {
+  padding: 20px; 
+}
+
+
+.vertical-timeline-element-subtitle {
+  font-weight: 400;
+  color: #c9c9c9;
+  font-size: 1rem;
+}
+
+
+
+.vertical-timeline-element--work:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.with-hover .vertical-timeline-element--work:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-timeline::before {
+  background: #8bc34a;  
+}
+
