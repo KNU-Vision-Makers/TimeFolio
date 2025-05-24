@@ -1,12 +1,7 @@
-import styles from './page.module.css';
+import BasicInfoPage from '@/components/BasicInfo';
 
-// 기본 정보 수정 페이지
-const EditBasicInfoPage = () => {
-    return(
-        <>
-            ## 연경양 파트 - 기본 정보 수정
-        </>
-    )
-}
+const Page = () => {
+  return <BasicInfoPage />;
+};
 
-export default EditBasicInfoPage
+export default Page;
