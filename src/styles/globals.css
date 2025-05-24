@@ -62,6 +62,7 @@ body {
   margin-left: 30px;
 }
 
+/* time-line-page */
 .content-title-middle {
     font-size : 50px;
     text-align: center;
@@ -107,12 +108,9 @@ body {
   box-shadow: none;
 }
 
-.with-hover .vertical-timeline-element--work:hover {
+.with-click .vertical-timeline-element--work:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.vertical-timeline::before {
-  background: #8bc34a;  
-}
 
