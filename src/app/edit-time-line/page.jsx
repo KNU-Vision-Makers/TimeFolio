@@ -1,12 +1,29 @@
 'use client';
+import { useState } from 'react';
 import TimeLine from '@/components/TimeLine';
+import styles from './page.module.css';
 
-//타임라인 수정 페이지 - 수빈 작성
+const TimeLineEditButton = ({ editMode, setEditMode }) => {
+  return (
+    <div>
+      <button
+        className={styles['time-line-edit-button']}
+        onClick={() => setEditMode(prev => !prev)}
+      >
+        {editMode ? 'Done' : '+ edit'}
+      </button>
+    </div>
+  );
+};
+
+
 
 const EditTimeLinePage = () => {
+  const [editMode, setEditMode] = useState(false);
   return (
-    <div className="with-hover">
-      <TimeLine />
+    <div className="with-click">
+      <TimeLine editMode={editMode} setEditMode={setEditMode} />
+      <TimeLineEditButton editMode={editMode} setEditMode={setEditMode} />
     </div>
   );
 };
