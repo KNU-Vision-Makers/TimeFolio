@@ -12,6 +12,18 @@ const TimeLine = ({ editMode, setEditMode }) => {
       updated[index][field] = value;
       setTimelineData(updated);
   };
+    const handleAddTimelineItem = () => {
+        setTimelineData(prev => [
+        ...prev,
+        {
+            title: 'New Title',
+            subtitle: 'New Subtitle',
+            date: 'New Date',
+            category: 'default'
+        }
+        ]);
+    };
+
 
   return (
     <div className="content-box">
@@ -64,7 +76,33 @@ const TimeLine = ({ editMode, setEditMode }) => {
               )}
             </VerticalTimelineElement>
           );
+          
         })}
+
+        {editMode ? (
+            <VerticalTimelineElement
+                className="vertical-timeline-element-edit-add"
+                iconStyle={{
+                    background: '#fff',
+                    border: `5px solid #888`,
+                    width: '20px',
+                    height: '20px',
+                    marginLeft: '-10px',
+                    marginTop: '21px',
+                    boxShadow: 'none'
+                }}
+
+                contentStyle={{ border: `2px solid #888`, display: 'flex', background: "#fff", cursor: 'pointer', alignItems: 'center' }}
+                contentArrowStyle={{ borderRight: '48px solid #888' }}
+                >
+                <div onClick={handleAddTimelineItem} style={{ width: '100%', textAlign: 'center' }}>
+                    <h4 style={{ margin: 0, fontFamily: 'Cheap-Potatoes-Black-Thin' }}>+ ADD COMPONENT</h4>
+                </div>
+                </VerticalTimelineElement>
+            ):(
+                <p hidden>if it's not on editMode</p>
+            )
+            }
       </VerticalTimeline>
     </div>
   );

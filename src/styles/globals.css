@@ -113,4 +113,26 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/*same with up component*/
+.vertical-timeline-element-edit-add:hover{
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
+.vertical-timeline-element-edit-add {
+  text-align: center;
+}
+
+.vertical-timeline-element-edit-add .bounce-in {
+  width: 1000px;
+}
+
+.vertical-timeline-element-edit-add .vertical-timeline-element-content {
+  min-height: 120px; /* 원하는 만큼 조절 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
