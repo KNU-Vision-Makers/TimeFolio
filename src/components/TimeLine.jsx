@@ -12,17 +12,30 @@ const TimeLine = ({ editMode, setEditMode }) => {
       updated[index][field] = value;
       setTimelineData(updated);
   };
-    const handleAddTimelineItem = () => {
-        setTimelineData(prev => [
-        ...prev,
-        {
-            title: 'New Title',
-            subtitle: 'New Subtitle',
-            date: 'New Date',
-            category: 'default'
-        }
-        ]);
-    };
+  const handleAddTimelineItem = () => {
+      setTimelineData(prev => [
+      ...prev,
+      {
+          title: 'New Title',
+          subtitle: 'New Subtitle',
+          date: 'New Date',
+          category: 'default'
+      }
+      ]);
+  };
+
+  const handleWriteDownItem = (index,field) => {
+    const updated = [...timelineData];
+    const value = updated[index][field];
+
+    const isTitleDefault = (field === 'title' && value === 'New Title');
+    const isSubtitleDefault = (field ===  'subtitle' && value === 'New Subtitle');
+
+    if (isTitleDefault || isSubtitleDefault) {
+      updated[index][field] = "";
+      setTimelineData(updated);
+    }
+  };
 
 
   return (
@@ -59,19 +72,62 @@ const TimeLine = ({ editMode, setEditMode }) => {
                 <>
                   <textarea
                     value={item.title}
+                    onClick={() => handleWriteDownItem(index, 'title')}
                     onChange={e => handleChange(index, 'title', e.target.value)}
+                    onBlur={() => {
+                      if (!item.title.trim()) {
+                        handleChange(index, 'title', 'New Title');
+                      }
+                    }}
                     style={{ display: 'block', resize:'none',border: `2px solid #CDCDCD`, outlineColor: `${color}`,borderRadius: '2px', fontSize: '1.25rem', fontWeight:'700', marginBottom: '0.5rem', width: '100%',fontFamily: 'Cheap-Potatoes-Black-Thin' }}
                   />
                   <textarea
                     value={item.subtitle}
+                    onClick={() => handleWriteDownItem(index, 'subtitle')}
                     onChange={e => handleChange(index, 'subtitle', e.target.value)}
+                    onBlur={() => {
+                      if (!item.subtitle.trim()) {
+                        handleChange(index, 'subtitle', 'New Subtitle');
+                      }
+                    }}
                     style={{ display: 'block', resize:'none',border: `2px solid #CDCDCD`, outlineColor: `${color}`,borderRadius: '2px', fontSize: '1rem', color:'#c9c9c9',width: '100%', fontFamily: 'Cheap-Potatoes-Black-Thin' }}
                   />
+                  <select
+                    value={item.category}
+                    onChange={e => handleChange(index, 'category', e.target.value)}
+                    style={{
+                      marginTop: '0.5rem',
+                      padding: '0.25rem',
+                      fontFamily: 'Cheap-Potatoes-Black-Thin',
+                      border: `1px solid ${color}`,
+                      borderRadius: '4px',
+                      outlineColor: color,
+                    }}
+                  >
+                    {Object.keys(categoryColorMap).map(key => (
+                      <option key={key} value={key}>{key}</option>
+                    ))}
+                  </select>
                 </>
               ) : (
                 <>
                   <h3 className="vertical-timeline-element-title" style={{ whiteSpace: 'pre-line' }}>{item.title}</h3>
                   <h4 className="vertical-timeline-element-subtitle" style={{ whiteSpace: 'pre-line' }}>{item.subtitle}</h4>
+                  <span
+                      style={{
+                        display: 'inline-block',
+                        marginTop: '1rem',
+                        padding: '0.25rem 0.75rem',
+                        fontSize: '0.75rem',
+                        fontWeight: 600,
+                        backgroundColor: color,
+                        color: '#fff',
+                        borderRadius: '999px',
+                        fontFamily: 'Cheap-Potatoes-Black-Thin',
+                      }}
+                    >
+                    #{item.category}
+                  </span>
                 </>
               )}
             </VerticalTimelineElement>
@@ -98,6 +154,7 @@ const TimeLine = ({ editMode, setEditMode }) => {
                 <div onClick={handleAddTimelineItem} style={{ width: '100%', textAlign: 'center' }}>
                     <h4 style={{ margin: 0, fontFamily: 'Cheap-Potatoes-Black-Thin' }}>+ ADD COMPONENT</h4>
                 </div>
+                
                 </VerticalTimelineElement>
             ):(
                 <p hidden>if it's not on editMode</p>

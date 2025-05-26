@@ -38,9 +38,10 @@ export const timelineData = [
 ];
 
 export const categoryColorMap = {
-  education: "#ff6666",  // 붉은 계열
-  program: "#00bcd4",    // 청록 계열
-  volunteer: "#8bc34a",  // 연두 계열
-  award: "#ff9800",      // 주황 계열
-  research: "#9c27b0",   // 보라 계열
+  education: "#ff6666",  // 빨간색 - 교육
+  program: "#00bcd4",    // 청록색 - 프로그램
+  volunteer: "#8bc34a",  // 연두색 - 봉사활동
+  award: "#ff9800",      // 주황색 - 수상
+  research: "#9c27b0",   // 보라색 - 연구
+  default: "#888888"     // 회색 - 디폴트
 };
