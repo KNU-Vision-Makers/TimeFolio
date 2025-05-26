@@ -37,6 +37,10 @@ const TimeLine = ({ editMode, setEditMode }) => {
     }
   };
 
+  const handleDelete = (index) => {
+    setTimelineData(prev => prev.filter((_, i) => i !== index));
+  };
+
 
   return (
     <div className="content-box">
@@ -49,13 +53,19 @@ const TimeLine = ({ editMode, setEditMode }) => {
             <VerticalTimelineElement
               key={index}
               className="vertical-timeline-element--work"
-              date={<span style={{
-                fontSize: '0.625rem',
-                fontWeight: 500,
-                color: '#000',
-                display: 'block',
-                paddingBottom: '1rem',
-              }}>{item.date}</span>}
+              date={                
+                editMode ? (
+                  <input
+                    type="text"
+                    value={item.date}
+                    onChange={e => handleChange(index, 'date', e.target.value)}
+                    style={{ fontSize: '1rem', padding: '0.25rem', fontFamily: 'Cheap-Potatoes-Black-Thin' , border: `2px solid ${color}` }}
+                  />
+                ) : (
+                  <span style={{ fontSize: '0.625rem', fontWeight: 500, color: '#000', display: 'block', paddingBottom: '1rem' }}>
+                    {item.date}
+                  </span>
+                )}
               contentStyle={{ border: `2px solid ${color}`, background: "#fff" }}
               iconStyle={{
                 background: '#fff',
@@ -70,6 +80,7 @@ const TimeLine = ({ editMode, setEditMode }) => {
             >
               {editMode ? (
                 <>
+                  {/* title */}
                   <textarea
                     value={item.title}
                     onClick={() => handleWriteDownItem(index, 'title')}
@@ -81,6 +92,7 @@ const TimeLine = ({ editMode, setEditMode }) => {
                     }}
                     style={{ display: 'block', resize:'none',border: `2px solid #CDCDCD`, outlineColor: `${color}`,borderRadius: '2px', fontSize: '1.25rem', fontWeight:'700', marginBottom: '0.5rem', width: '100%',fontFamily: 'Cheap-Potatoes-Black-Thin' }}
                   />
+                  {/* subtitle */}
                   <textarea
                     value={item.subtitle}
                     onClick={() => handleWriteDownItem(index, 'subtitle')}
@@ -92,6 +104,7 @@ const TimeLine = ({ editMode, setEditMode }) => {
                     }}
                     style={{ display: 'block', resize:'none',border: `2px solid #CDCDCD`, outlineColor: `${color}`,borderRadius: '2px', fontSize: '1rem', color:'#c9c9c9',width: '100%', fontFamily: 'Cheap-Potatoes-Black-Thin' }}
                   />
+                  {/* category select */}
                   <select
                     value={item.category}
                     onChange={e => handleChange(index, 'category', e.target.value)}
@@ -108,6 +121,26 @@ const TimeLine = ({ editMode, setEditMode }) => {
                       <option key={key} value={key}>{key}</option>
                     ))}
                   </select>
+                  {/* delete */}
+                  <div  style={{
+                        display: 'flex',
+                        justifyContent: 'flex-end',
+                        width: '100%',
+                        marginTop: '0.5rem'
+                      }}>
+                  <button
+                    onClick={() => handleDelete(index)}
+                    style={{ display: 'flex',
+                       paddingRight: '1rem',
+                       background: `${color}`, 
+                       color: '#fff', border: 'none', 
+                       
+                       padding: '0.5rem 0.5rem', borderRadius: '4px', 
+                       cursor: 'pointer', fontFamily: 'Cheap-Potatoes-Black-Thin' }}
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </>
               ) : (
                 <>

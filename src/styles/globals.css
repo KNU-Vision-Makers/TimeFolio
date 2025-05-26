@@ -123,9 +123,7 @@ body {
   text-align: center;
 }
 
-.vertical-timeline-element-edit-add .bounce-in {
-  width: 1000px;
-}
+
 
 .vertical-timeline-element-edit-add .vertical-timeline-element-content {
   min-height: 120px; /* 원하는 만큼 조절 */
