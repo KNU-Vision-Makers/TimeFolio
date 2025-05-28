@@ -60,7 +60,7 @@ const BasicInfo = () => {
             <p>TEL.</p><p>82+)1012345678</p>
             <p>EMAIL.</p><p>SUBIN8509@GMAIL.COM</p>
             <p>BIRTH.</p><p>2004.05.08</p>
-            <p>NATIONALITY.</p><p>REPUBLIC OF KOREA</p>
+            <p>NATIONALITY.</p><p>SOUTH KOREA</p>
           </div>
 
           {/* SNS 아이콘 */}
