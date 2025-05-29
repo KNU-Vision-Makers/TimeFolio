@@ -134,3 +134,56 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
 }
+
+/* 전역 스타일 */
+.techStackContainer {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.content-title-middle {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Cheap-Potatoes-Black-Thin', sans-serif;
+  color: var(--olive);
+  margin-bottom: 40px;
+}
+
+.techList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.techItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: var(--background-white);
+  border-radius: 10px;
+  border: 2px solid var(--olive);
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.techItem:hover {
+  transform: scale(1.05); /* hover 시 아이템 크기 커짐 */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.techImage {
+  width: 40px; /* 이미지 크기 */
+  height: 40px;
+  margin-right: 15px;
+}
+
+.techName {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--olive);
+}
