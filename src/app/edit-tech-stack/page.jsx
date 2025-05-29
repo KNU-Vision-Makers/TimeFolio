@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from "react";
-import styles from "../styles/TechStack.module.css"; // CSS 파일
+import styles from "./page.module.css"; // CSS 파일
 
 const TechStack = () => {
   const [techList, setTechList] = useState(["React", "Next.js", "JavaScript"]);
