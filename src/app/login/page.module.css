@@ -8,12 +8,6 @@
   background-color: #eeeeee;
 }
 
-.logo {
-  color: #4A752C;
-  font-size: 35px;
-  margin-bottom: 10px;
-}
-
 .inputbox {
   display: flex;
   width: 350px;
@@ -27,32 +21,12 @@
   width: 350px;
   height: 50px;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .inputbox input:focus {
   border: 3px solid #4A752C;
   outline: none;
-}
-
-.loginbutton {
-  margin-top: 30px;
-}
-
-.loginbutton button {
-  border: 3px solid #4A752C;
-  background-color: #4A752C;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  border-radius: 10px;
-  width: 350px;
-  height: 50px;
-}
-
-.loginbutton button:hover,
-.loginbutton button:focus {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .dividingline {
