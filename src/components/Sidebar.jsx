@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import NamePlate from "./NamePlate";
+import Link from 'next/link';
 
 export default function Sidebar({ sectionRefs }) {
   const handleClick = (key) => {
@@ -16,6 +17,14 @@ export default function Sidebar({ sectionRefs }) {
                 <li><button className="side-bar-button" onClick={() => handleClick("DocGenerate")}>Doc Generate</button></li>
             </ul>
             <hr style={{ border: "none", borderTop: "4px solid #BEBEBE", margin: "10px 30px 0px 30px" }} />
+
+            <Link href="/login" className="side-bar-login-button">
+              Login
+            </Link>
+            
+            <Link href="/signup" className="side-bar-signup-button">
+              Sign up
+            </Link>
         </aside>
     )
 }
