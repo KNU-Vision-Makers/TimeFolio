@@ -100,7 +100,7 @@ const BasicInfo = () => {
 
             <div style={{ textAlign: 'center' }}>
               <img
-                src="/images/instagram.png"
+                src="/images/insta.png"
                 alt="Instagram"
                 style={{
                   width: '150px',
@@ -140,6 +140,7 @@ const BasicInfo = () => {
               height: 'auto',
               objectFit: 'cover',
               borderRadius: '8px',
+              marginTop: '80px'
             }}
           />
         </div>
