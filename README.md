@@ -15,17 +15,12 @@
 
 ## 실행 화면 : User 사이트
 |<img src="/public/images/Screen/basicinfo.png" width="1000px">|
-|:---:|
 |Main - Basic Information|
 |<img src="/public/images/Screen/timeline.png" width="1000px">|
-|:---:|
 |Main - Time Line(학력, 수상, 프로젝트, 경력 등등)|
 |<img src="/public/images/Screen/techstack.png" width="1000px">|
-|:---:|
 |Main - Tech Stack|
 |<img src="/public/images/Screen/login.png" width="1000px">|
-|:---:|
 |Login Page|
 |<img src="/public/images/Screen/signup.png" width="1000px">|
-|:---:|
 |SignUp Page|
