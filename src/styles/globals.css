@@ -51,7 +51,8 @@ body {
   font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
 }
 
-.side-bar-button:active{
+.side-bar-button:active,
+.side-bar-button:hover{
   color:#4A752C;
   font-weight: bolder;
 }
